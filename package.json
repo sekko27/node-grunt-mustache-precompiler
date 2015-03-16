@@ -24,7 +24,9 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "coffee -c -o tasks tasks-src && coffee -c -o test test-src && coffee -c Gruntfile.coffee",
+    "postinstall": "echo \"Compiling coffee sources\" && coffee -c -o tasks tasks-src && coffee -c Gruntfile.coffee && coffee -c -o test test-src && copy -a test-src/data test/data"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.9.2",
