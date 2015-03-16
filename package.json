@@ -1,0 +1,25 @@
+{
+  "name": "grunt-mustache-precompiler",
+  "version": "1.0.0",
+  "description": "Grunt plugin for mustache precompile using Hogan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec --recursive tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sekko27/node-grunt-mustache-precompiler.git"
+  },
+  "keywords": [
+    "mustache",
+    "hogan",
+    "precompile",
+    "grunt"
+  ],
+  "author": "Sekko27 <sekko272727@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sekko27/node-grunt-mustache-precompiler/issues"
+  },
+  "homepage": "https://github.com/sekko27/node-grunt-mustache-precompiler"
+}
