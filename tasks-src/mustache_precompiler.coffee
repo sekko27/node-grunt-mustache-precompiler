@@ -29,7 +29,7 @@ module.exports = (grunt) ->
       os = fs.createWriteStream options.destination
       os
         .on 'finish', ->
-          grunt.log.ok "#{counter} mustache templates have been precompiled to #{options.target}"
+          grunt.log.ok "#{counter} mustache templates have been precompiled to #{options.destination}"
           done()
         .on 'error', (err) ->
           grunt.log.error err
